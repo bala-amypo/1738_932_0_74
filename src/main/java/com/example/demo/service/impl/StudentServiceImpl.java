@@ -1,4 +1,7 @@
+
 package com.example.demo.service.impl;
+
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +14,7 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
-    StudentRepository repo;
+    private StudentRepository repo;
 
     @Override
     public StudentEntity addStudents(StudentEntity student) {
@@ -19,8 +22,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public List<StudentEntity> getStudents(){
-        return repo.fineR()
+    public List<StudentEntity> getStudents() {
+        return repo.findAll();
     }
-
 }
