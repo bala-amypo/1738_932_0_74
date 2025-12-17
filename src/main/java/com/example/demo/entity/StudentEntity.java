@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class StudentEntity{
-    @Id;
+    @Id
     @GenaratedValue(strategy = GenerationType.IDENTITY)
 
      private Long id;
@@ -22,7 +22,7 @@ public class StudentEntity{
     }
 
     public StudentEntity(){
-        
+
     }
 
     public void setName(String name){
@@ -45,7 +45,7 @@ public class StudentEntity{
         this.cgpa=cgpa;
     }
 
-    public String g etCgpa(){
+    public float getCgpa(){
         return this.cgpa;
     }
 }
