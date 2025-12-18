@@ -25,6 +25,9 @@ public class StudentEntity {
     public StudentEntity() {
         
     }
+    public Long getId() {
+        return id;
+    }
 
     public void setName(String name) {
         this.name = name;
